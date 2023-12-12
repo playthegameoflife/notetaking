@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Note-Taking App</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <header>
+            <h1>Your Note-Taking App</h1>
+        </header>
+        <main class="flex-container">
+            <section id="note-editor" class="flex-item">
+                <form id="note-form">
+                    <label for="note-content">Write your note:</label>
+                    <textarea id="note-content" rows="6" placeholder="Start typing your note..."></textarea>
+                    <div class="button-container">
+                        <button type="button" onclick="saveNote()">Save Note</button>
+                        <button type="button" onclick="clearForm()">Clear</button>
+                    </div>
+                </form>
+            </section>
+            <section id="note-list" class="flex-item">
+                <!-- Display a list of notes here -->
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
